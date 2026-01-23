@@ -1,77 +1,40 @@
-# Laravel-lang
+# Laravel Localizations
 
-In this repository, you can find the lang files for the [Laravel Framework 4/5/6/7/8](https://laravel.com), [Laravel Jetstream](https://jetstream.laravel.com/1.x/introduction.html) and [Laravel Fortify](https://github.com/laravel/fortify).
+<picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://banners.beyondco.de/Laravel%20Localizations.png?pattern=topography&style=style_2&fontSize=100px&md=1&showWatermark=1&icon=https%3A%2F%2Flaravel.com%2Fimg%2Flogomark.min.svg&theme=dark&packageManager=composer+require+--dev&packageName=laravel-lang%2Flang&description=by+Laravel+Lang&images=https%3A%2F%2Flaravel.com%2Fimg%2Flogomark.min.svg">
+    <img src="https://banners.beyondco.de/Laravel%20Localizations.png?pattern=topography&style=style_2&fontSize=100px&md=1&showWatermark=1&icon=https%3A%2F%2Flaravel.com%2Fimg%2Flogomark.min.svg&theme=light&packageManager=composer+require+--dev&packageName=laravel-lang%2Flang&description=by+Laravel+Lang&images=https%3A%2F%2Flaravel.com%2Fimg%2Flogomark.min.svg" alt="Laravel Localizations">
+</picture>
 
-## News
+[![Stable Version][badge_stable]][link_packagist]
+[![Total Downloads][badge_downloads]][link_packagist]
+[![Github Workflow Status][badge_build]][link_build]
+[![License][badge_license]](https://laravel-lang.com/license.html)
 
-* in version 6.1, we propose a new file by language: `validation-inline.php` ( see #1268 )
-* in version 7, we propose new directory names to follow ISO-15897 ( see #1269 )
+## Documentation
 
-## Install
-
-### Via Composer
-
-Install the Laravel-lang package to your Laravel project with composer using command from the table below based on the version of Laravel you are using:
-
-| Laravel version                     | Composer command                                  |
-|-------------------------------------|---------------------------------------------------|
-| Laravel 8.x                         | `composer require laravel-lang/lang:~7.0` |
-| Laravel 7.x and new directory names | `composer require laravel-lang/lang:~7.0` |
-| Laravel 7.x                         | `composer require laravel-lang/lang:~6.1` |
-| Laravel 6.x                         | `composer require laravel-lang/lang:~5.0` |
-| Laravel 5.8                         | `composer require laravel-lang/lang:~4.0` |
-| Laravel 5.1-5.7                     | `composer require laravel-lang/lang:~3.0` |
-| Laravel 5                           | `composer require laravel-lang/lang:~2.0` |
-| Laravel 4                           | `composer require laravel-lang/lang:~1.0` |
-
-#### Copy files
-
-After adding the dependency using composer (as described above) to your application you can find the language files under the directory `vendor/laravel-lang/lang`.
-
-Copy the folders (and JSON files) of languages that you want to use, into the directory `resources/lang` of your Laravel application (or `app/lang` in Laravel 4).
-
-### Via GitHub
-
-* Clone the [GitHub repository](https://github.com/Laravel-Lang/lang/) : *git clone https://github.com/Laravel-Lang/lang.git*
-* Or download the [zip file](https://github.com/Laravel-Lang/lang/archive/master.zip)
-* Choose the branch:
-    * `laravel4` for Laravel 4 project
-    * `master` for Laravel 5, 6, 7, 8 projects
-* Copy the folders of languages that you want, in `resources/lang` folder of your Laravel application (or `app/lang` in Laravel 4).
-
-### Via SVN
-
-Run this in your project directory:
-
-```sh
-# Laravel 5:
-svn export https://github.com/Laravel-Lang/lang/trunk/src/[language-code] resources/lang/[language-code]
-
-# Laravel 4:
-svn export https://github.com/Laravel-Lang/lang/branches/laravel4/[language-code] app/lang/[language-code]
-```
-
-Replace `[language-code]` by any of the languages listed [here](src).
-
-## Usage [Laravel only]
-
-In the file *config/app.php*, change the value of *locale* by the short name of your language (*app/config/app.php* in Laravel 4).
+See the [documentation](https://laravel-lang.com/packages-lang.html) for detailed installation.
 
 ## Contributing
 
-Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
+Please see [CONTRIBUTING](https://laravel-lang.com/contributions.html) for details.
 
-## Status of files
+## Support Us
 
-* Check the [todo.md](todo.md) file to see the missing translations.
+❤️ Laravel Lang? Please consider supporting our collective on [Boosty](https://boosty.to/laravel-lang).
 
-## Projects based on this package
+## License
 
-* [LaravelLang](https://github.com/ARCANEDEV/LaravelLang) by [*@arcanedev-maroc*](https://github.com/ARCANEDEV) - Translations manager and checker for Laravel.
-* [Laravel-lang](https://github.com/overtrue/laravel-lang) by [*@overtrue*](https://github.com/overtrue) - Command to add languages in your project.
-* [Lang Publisher](https://github.com/andrey-helldar/laravel-lang-publisher) by [*@andrey-helldar*](https://github.com/andrey-helldar) - Easy installation and update of translation files for your project.
+This package is licensed under the [MIT License](https://laravel-lang.com/license.html).
 
-## Credits
 
-- [Referents by language](referents.md)
-- [All Contributors](https://github.com/Laravel-Lang/lang/graphs/contributors)
+[badge_build]:          https://img.shields.io/github/actions/workflow/status/laravel-lang/lang/tests.yml?branch=main&style=flat-square
+
+[badge_downloads]:      https://img.shields.io/packagist/dt/laravel-lang/lang.svg?style=flat-square
+
+[badge_license]:        https://img.shields.io/packagist/l/laravel-lang/lang.svg?style=flat-square
+
+[badge_stable]:         https://img.shields.io/github/v/release/laravel-lang/lang?label=stable&style=flat-square
+
+[link_build]:           https://github.com/laravel-lang/lang/actions
+
+[link_packagist]:       https://packagist.org/packages/laravel-lang/lang
